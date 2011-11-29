@@ -12,5 +12,6 @@ else{print "error\n";}
 
 print " THIS IS GITHUB TEST\n";
 print "$a $b $c = $d \n";
+print "--------------\n";
 
 exit;
