@@ -10,6 +10,7 @@ elsif($b eq "*"){ $d=$a * $c;}
 elsif($b eq "/"){ $d=$a/$c;}
 else{print "error\n";}
 
+print " THIS IS GITHUB TEST\n";
 print "$a $b $c = $d \n";
 
 exit;
