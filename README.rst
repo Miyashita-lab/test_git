@@ -7,6 +7,10 @@
 最初にgithubでcreate new repositoryでレポジトリ登録
 directoryを作成（test_gitなど）
 構築
+
+GitHub for macはgit commandのインストールに使う。あとはコマンドラインの方が小回りが利いて良い。
+
+
 はじめに
 ::
 
