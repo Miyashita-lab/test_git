@@ -21,28 +21,33 @@ $ git init
 何かファイルを作成。例えばREADME
 
 足す・変更の場合
+::
 
 $ git add *
 
 消す場合（これでファイルも消える）
+::
 
 $ git rm xxxx.fpp
 
 $ git commit -m "20111129-miya-2300"
 
 一番最初だけ(最初以外は飛ばす)
+::
 
 $ git remote add origin git@github.com:yukimya/test_git.git
 
 $ git push origin master
 
 githubからファイルを落とす。
+::
 
 $ git clone git@github.com:yukimya/test_git.git
 
 push
 
 編集後
+::
 
 $ git add *
 
@@ -53,6 +58,7 @@ $ git push
 pull
 
 cloneで作ったdirectoryで
+::
 
 $ git pull -u origin master2
 
