@@ -29,14 +29,12 @@ $ git add *
 ::
 
 $ git rm xxxx.fpp
-
 $ git commit -m "20111129-miya-2300"
 
 一番最初だけ(最初以外は飛ばす)
 ::
 
 $ git remote add origin git@github.com:yukimya/test_git.git
-
 $ git push origin master
 
 githubからファイルを落とす。
@@ -50,9 +48,7 @@ push
 ::
 
 $ git add *
-
 $ git commit -m "20111129-miya-23:30"
-
 $ git push
 
 pull
