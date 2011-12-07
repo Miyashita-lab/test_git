@@ -39,7 +39,7 @@ $ git commit -m "20111129-miya-2300"
 ::
 
 $ git remote add origin git@github.com:yukimya/test_git.git
-$ git push origin master
+$ git push -u origin master
 
 githubからファイルを落とす。
 ::
