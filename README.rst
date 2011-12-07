@@ -63,3 +63,15 @@ cloneで作ったdirectoryで
 $ git pull -u origin master2
 
 など
+
+ほかに
+logなどは
+::
+
+$ git log
+$ git status
+
+１つ戻すとき
+::
+
+$ git reset
