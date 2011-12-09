@@ -33,6 +33,9 @@ $ git add *
 ::
 
 $ git rm xxxx.fpp
+$ git mv xxx.fpp yyy.fpp
+$ git mv yyy.fpp dir/.
+
 $ git commit -m "20111129-miya-2300"
 
 一番最初だけ(最初以外は飛ばす)
