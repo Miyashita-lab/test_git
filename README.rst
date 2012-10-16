@@ -40,7 +40,10 @@ $ git commit -m "20111129-miya-2300"
 一番最初だけ(最初以外は飛ばす)
 ::
 
+(old)
 $ git remote add origin git@github.com:yukimya/test_git.git
+(currenty)
+$ git remote add origin https://github.com/yukimya/rein.git
 $ git push -u origin master
 
 githubからファイルを落とす。
