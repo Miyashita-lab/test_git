@@ -80,3 +80,74 @@ $ git status
 ::
 
 $ git reset
+
+
+ブランチ
+-------------------
+
+Master, devel, project, versionを作成する。
+develはMasterからの分岐にする。projectはdevelからの分岐。versionはMasterからの分岐とする。
+::
+
+ブランチを調べる。(必ず場所をチェックする。)
+::
+
+$ git branch -a
+
+ブランチの作成（新規）
+::
+
+$ git branch -a
+$ git checkout -b new_branch
+$ git push origin new_branch
+
+他のブランチからのpush
+::
+
+$ git push origin new_branch
+
+ブランチの作成（取込み）
+::
+
+$ git branch -a
+$ git checkout next_branch xxx/origin/next_branch
+
+gitのアーカイブ化
+::
+
+$ git archive --format=tar HEAD --prefix=program/ | gzip > ../program_v.1.0.1.tar.gz
+
+gitにタグを付ける
+::
+
+$ git tag new_tag
+$ git push --tags
+or
+$ git push release_xxxx
+
+タグを消す
+::
+
+$git tag origin :release_xxxx
+
+masterにnext_branchをマージするとき（ブランチのマージ）。
+::
+
+$ git merge --no-ff next_branch  (master上で)
+
+ブランチの作り直し（上だけで良いかも）
+::
+
+$ git rebase master (next_branch上で)
+
+コミットの内容を取り消す。
+::
+
+$ git log --oneline
+$ git revert --no-edit XXXX
+$ git log --oneline
+
+gitのブランチチェック
+::
+
+$ git log --oneline --graph
