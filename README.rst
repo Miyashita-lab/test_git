@@ -122,7 +122,9 @@ gitにタグを付ける
 
 $ git tag new_tag
 $ git push --tags
+
 or
+
 $ git push release_xxxx
 
 タグを消す
