@@ -110,7 +110,7 @@ $ git push origin new_branch
 ::
 
 $ git branch -a
-$ git checkout next_branch xxx/origin/next_branch
+$ git checkout -b next_branch origin/next_branch
 
 gitのアーカイブ化
 ::
