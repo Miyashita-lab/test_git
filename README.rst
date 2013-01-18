@@ -112,6 +112,41 @@ $ git push origin new_branch
 $ git branch -a
 $ git checkout -b next_branch origin/next_branch
 
+
+rebase/merge
+----------------
+
+rebaseはcurrent branchに最新のmasterやdevelの情報等を取込みたいときに使います。
+::
+
+$ git checkout issue1
+$ git rebase devel 
+コンフリクトで修正が必要な場合には
+$ git status
+で調べて、修正します。終了後、
+$ git rebase --continue
+
+
+で、最新のmasterやdevelの情報がとりこめます。
+master/develはそのまま、current branchは最新のmaster/devel+これまで開発した部分、となります。
+
+mergeは取入れたいブランチで実行します。例えば、develにissue1をmergeしたい場合には
+::
+
+$ git checkout devel
+$ git merge issue1
+コンフリクトがあれば、修正します。
+$ git add *
+$ git commit -m "test"
+$ git push origin devel
+
+
+となります。issue1はそのまま、develがissue1を取込んで最新となります。
+
+
+その他
+-----------------
+
 gitのアーカイブ化
 ::
 
